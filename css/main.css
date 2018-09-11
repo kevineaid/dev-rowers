@@ -248,3 +248,25 @@ header:after {
 	line-height: 30px;
 	background: rgba(0,0,0, 0.3);
 }
+.dropdown-description{
+	width: 100%;
+	/* height: 80px; */
+	background: #f2f2f2;
+	border: 1px solid #d9d9d9;
+}
+.dropdown-description .dropdown-trigger{
+	width: 100%;
+	height: 100%;
+	padding: 20px 30px;
+}
+.dropdown-trigger:hover{
+	cursor: pointer;
+}
+#description{
+	display: none;
+	transition: 0.3s;
+}
+#description.active{
+	display:block;
+	position: relative;
+}
