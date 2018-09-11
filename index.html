@@ -14,11 +14,11 @@
         <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/main.css?v=1" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/main.css?v=<?php echo microtime(); ?>" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
-        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/popup.css?v=<?php echo microtime(); ?>">
     </head>
     <body class=" ">
 
@@ -95,82 +95,49 @@
             <!--end bar-->
         </div>
         <div class="main-container">
-          <div id="pop-up">
-            <div class="trigger-pop" onclick="togglePop()">
-              <!-- <span class="line1"></span>
-              <span class="line2"></span>
-              <span class="line3"></span> -->
-              <h3>FREE DEMO REQUEST</h3>
+            <div id="pop-up">
+                <div class="pop-up-wrap">
+                    <div class="trigger-pop" onclick="togglePop()">
+                      <!-- <span class="line1"></span>
+                      <span class="line2"></span>
+                      <span class="line3"></span> -->
+                      <h3>FREE DEMO REQUEST</h3>
+                    </div>
+                    <div class="popup-form">
+                      <h3>FREE DEMO REQUEST</h3>
+                      <form class="" action="index.html" method="post">
+                        <input type="text" name="name" placeholder="Your name" value="">
+                        <input type="text" name="number" placeholder="Mobile Number" value="">
+                        <input type="email" name="email" placeholder="Email Address" value="">
+                        <input type="text" name="city" placeholder="Your City" value="">
+                        <input type="password" name="pin" placeholder="PIN Number" value="">
+                        <input id="btn-demo" type="submit" name="" value="Request Demo">
+                      </form>
+                      <p>By signing up, you agree to the <a href="#"> Terms of Service</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="popup-form">
-              <h3>FREE DEMO REQUEST</h3>
-              <span> </span>
-              <form class="" action="index.html" method="post">
-                <input type="text" name="name" placeholder="Your name" value="">
-                <input type="text" name="number" placeholder="Mobile Number" value="">
-                <input type="email" name="email" placeholder="Email Address" value="">
-                <input type="text" name="city" placeholder="Your City" value="">
-                <input type="password" name="pin" placeholder="PIN Number" value="">
-                <input id="btn-demo" type="submit" name="" value="Request Demo">
-              </form>
-              <p>By signing up, you agree to the <a href="#"> Terms of Service</a></p>
-            </div>
-          </div>
 
-          
-            <section class="cover height-90 imagebg slider " data-arrows="true" data-paging="true">
-                <ul class="slides">
-                    <li class="imagebg" data-overlay="4">
-                        <div class="background-image-holder background--top">
-                            <img alt="background" src="img/rower-webbanner-fix.jpg" />
+            <div class="main-bg-wrapper">
+                <div id="main-bg-header">
+                    <img  src="img/banner2.jpg" />
+                    <img  src="img/banner1.jpg" />
+                    <img  src="img/banner2.jpg" />
+                </div>
+            </div>
+
+            <section id="headline">
+                <div class="container" >
+                    <div class="d-flex align-items-center">
+                        <div class="item">
+                            <h1 class="heading">Heading 1 Here</h1>
+                            <p class="subheading">Indoor living without fresh air poisons the blood and makes you sick. Have some fresh air and forget decaying of your body and mind.</p>
+                            <!-- <p>Love the feeling of fresh air on your face and put some on your brain everyday</p> -->
                         </div>
-                        <div class="container pos-vertical-center pos-horizontal-left">
-                            <div class="row">
-                                <div class="col-md-9 col-lg-7">
-                                    <h1>
-                                        Prosperity Begins Here...
-                                    </h1>
-                                    <p class="lead">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aut illo repellendus sequi, reprehenderit tenetur necessitatibus culpa.
-                                    </p>
-                                    <a class="btn type--uppercase" href="#">
-                                        <span class="btn__text">
-                                            Get Started
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--end of row-->
-                        </div>
-                        <!--end of container-->
-                    </li>
-                    <li class="imagebg" data-overlay="4">
-                        <div class="background-image-holder">
-                            <img alt="background" src="img/rower-webbanner-fix.jpg" />
-                        </div>
-                        <div class="container pos-vertical-center">
-                            <div class="row">
-                                <div class="col-md-9 col-lg-7">
-                                    <h1>
-                                        Header 1
-                                    </h1>
-                                    <p class="lead">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aut illo repellendus sequi, reprehenderit tenetur necessitatibus culpa.
-                                    </p>
-                                    <a class="btn type--uppercase" href="#">
-                                        <span class="btn__text">
-                                            Get Started
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--end of row-->
-                        </div>
-                        <!--end of container-->
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                
             </section>
-            <!--end bar-->
 
             <section class="switchable switchable--switch feature-large border--bottom">
                 <div class="container">
@@ -535,7 +502,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <img alt="Image" class="logo" src="img/logo.png">
+                            <img alt="Image" class="logo" src="img/logo.png" style="width: 160px;max-height: initial;">
                             <!-- <ul class="list-inline list--hover">
                                 <li class="list-inline-item">
                                     <a href="#">
@@ -547,27 +514,27 @@
                         <div class="col-md-6 text-right text-left-xs">
                             <ul class="social-list list-inline list--hover">
                                 <li class="list-inline-item">
-                                    <a href="https://twitter.com/rowersdpl">
+                                    <a href="https://twitter.com/rowersdpl" target="_blank">
                                         <i class="socicon socicon-twitter icon icon--xs"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="https://www.facebook.com/rowersdpl/">
+                                    <a href="https://www.facebook.com/rowersdpl/" target="_blank">
                                         <i class="socicon socicon-facebook icon icon--xs"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="https://www.instagram.com/rowersdpl/">
+                                    <a href="https://www.instagram.com/rowersdpl/" target="_blank">
                                         <i class="socicon socicon-instagram icon icon--xs"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="https://www.youtube.com/channel/UCxTj4hrKPlRhL4UZNg1xCYA">
+                                    <a href="https://www.youtube.com/channel/UCxTj4hrKPlRhL4UZNg1xCYA" target="_blank">
                                         <i class="socicon socicon-youtube icon icon--xs"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="https://wa.me/919891890102">
+                                    <a href="https://wa.me/919891890102" target="_blank">
                                         <i class="socicon socicon-whatsapp icon icon--xs"></i>
                                     </a>
                                 </li>
@@ -577,8 +544,8 @@
                     <!--end of row-->
                     <div class="row">
                         <div class="col-md-6">
-                            <p class="type--fine-print type--fade">
-                                Your Slogan
+                            <p class="type--fine-print type--fade" style="font-size: 15px;">
+                                prosperity begins here
                             </p>
                         </div>
                         <div class="col-md-6 text-right text-left-xs">
