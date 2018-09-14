@@ -54,7 +54,7 @@ section#headline {
 .background-image-holder,
 .background-image-holder.background--top {
 	background-size: 100% !important;
-	background-position: 0 -200px !important;
+	/* background-position: 0 -200px !important; */
 }
 
 .imagebg:not(.image--light) h1 {
@@ -269,4 +269,9 @@ header:after {
 #description.active{
 	display:block;
 	position: relative;
+}
+
+
+.feature-7.h-100px {
+  height: 80px;
 }
