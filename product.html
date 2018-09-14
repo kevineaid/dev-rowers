@@ -14,7 +14,7 @@
         <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/main.css?v=1" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/main.css?v=2" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
@@ -64,7 +64,7 @@
                                         <a href="index.html">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#">Product</a>
+                                        <a href="product.html">Product</a>
                                     </li>
                                     <li>
                                         <a href="#">Works</a>
@@ -74,13 +74,6 @@
                                     </li>
                                     <li>
                                         <a href="#">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a class="btn btn--sm btn-disabled type--uppercase" href="#">
-                                            <span class="btn__text">
-                                                Action
-                                            </span>
-                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -95,7 +88,7 @@
             <!--end bar-->
         </div>
         <div class="main-container">
-          <section class="text-center imagebg space--lg" data-overlay="6">
+          <section class="text-center imagebg space--md" data-overlay="6">
                 <div class="background-image-holder" style="background: url(&quot;img/landing-21.jpg&quot;); opacity: 1;">
                     <img alt="background" src="img/landing-22.jpg">
                 </div>
@@ -138,121 +131,184 @@
             </div>
           </div>
 
-          <!-- section list product Rowers -->
-          <section class="space--sm">
+
+        <section class="space--sm product-list">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="masonry">
-                            <div class="masonry-filter-container row justify-content-center align-items-center">
-                                <span>Choose Product :</span>
-                                <div class="masonry-filter-holder">
-                                    <div class="masonry__filters" data-filter-all-text="All Products"><ul><li class="active" data-masonry-filter="*">All Products</li></ul></div>
+              <div class="row">
+                <div class="col-lg-12">
+                        <h2 class="text-center">Select Category</h2>
+                        <div class="portfolioFilter clearfix">
+                            <div class="row" style="margin-bottom: 30px;">
+                                <div class="col-md-4 col-6">
+                                    <a href="#" class="block" data-filter="*">
+                                        <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
+                                            <div class="background-image-holder" style="background: url(&quot;img/blog-1.jpg&quot;); opacity: 1;">
+                                                <img alt="background" src="img/cowork-11.jpg">
+                                            </div>
+                                            <h3 class="pos-vertical-center type--bold">All Products</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <a href="#" class="block" data-filter=".airp">
+                                        <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
+                                            <div class="background-image-holder" style="background: url(&quot;img/cowork-1.jpg&quot;); opacity: 1;">
+                                                <img alt="background" src="img/cowork-10.jpg">
+                                            </div>
+                                            <h3 class="pos-vertical-center type--bold">Air Purifier</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <a href="#" class="block" data-filter=".solar">
+                                        <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
+                                            <div class="background-image-holder" style="background: url(&quot;img/education-1.jpg&quot;); opacity: 1;">
+                                                <img alt="background" src="img/cowork-9.jpg">
+                                            </div>
+                                            <h3 class="pos-vertical-center type--bold">Solar</h3>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="masonry__container row masonry--active" style="position: relative; height: 1512.06px;">
-                                    <div class="masonry__item col-md-4" style="position: absolute; left: 0px; top: 0px;"></div>
-                                    <div class="masonry__item col-md-4 filter-computing" data-masonry-filter="Home" style="position: absolute; left: 0px; top: 0px;">
-                                        <div class="product boxed boxed--border bg--secondary">
-                                            <span class="label">Sale</span>
-                                            <a href="detail.html">
-                                                <img alt="Image" src="img/product_image1.png">
-                                            </a>
-                                            <a class="block" href="detail.html">
-                                                <div>
-                                                    <h5>Rowers Product 1</h5>
-                                                    <span> Product 1 Info</span>
-                                                </div>
-                                                <div>
-                                                    <span class="h4 inline-block type--strikethrough">$899</span>
-                                                    <span class="h4 inline-block">$799</span>
-                                                </div>
-                                            </a>
+                            <div class="row">
+                                <div class="col-md-3 col-6">
+                                    <a href="#" class="block" data-filter="*">
+                                        <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
+                                            <div class="background-image-holder" style="background: url(&quot;img/blog-1.jpg&quot;); opacity: 1;">
+                                                <img alt="background" src="img/sample-small.jpg">
+                                            </div>
+                                            <h4 class="pos-vertical-center type--bold">Filter 1</h4>
                                         </div>
-                                    </div>
-                                    <!--end item-->
-                                    <div class="masonry__item col-md-4 filter-creative" data-masonry-filter="Car" style="position: absolute; left: 380px; top: 0px;">
-                                        <div class="product">
-                                            <a href="detail.html">
-                                                <img alt="Image" src="img/product images 2.png">
-                                            </a>
-                                            <a class="block" href="detail.html">
-                                                <div>
-                                                    <h5>Rowers Product 20</h5>
-                                                    <span> Product 20 Info</span>
-                                                </div>
-                                                <div>
-                                                    <span class="h4 inline-block">$849</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!--end item-->
-                                    <div class="masonry__item col-md-4 filter-computing" data-masonry-filter="Home" style="position: absolute; left: 0px; top: 0px;">
-                                        <div class="product boxed boxed--border bg--secondary">
-                                            <span class="label">Sale</span>
-                                            <a href="detail.html">
-                                                <img alt="Image" src="img/product_image1.png">
-                                            </a>
-                                            <a class="block" href="detail.html">
-                                                <div>
-                                                    <h5>Rowers Product 1</h5>
-                                                    <span> Product 1 Info</span>
-                                                </div>
-                                                <div>
-                                                    <span class="h4 inline-block type--strikethrough">$899</span>
-                                                    <span class="h4 inline-block">$799</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!--end item-->
-                                    <div class="masonry__item col-md-4 filter-creative" data-masonry-filter="Car" style="position: absolute; left: 380px; top: 0px;">
-                                        <div class="product">
-                                            <a href="detail.html">
-                                                <img alt="Image" src="img/product images 2.png">
-                                            </a>
-                                            <a class="block" href="detail.html">
-                                                <div>
-                                                    <h5>Rowers Product 20</h5>
-                                                    <span> Product 20 Info</span>
-                                                </div>
-                                                <div>
-                                                    <span class="h4 inline-block">$849</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!--end item-->
-                                    <div class="masonry__item col-md-4 filter-creative" data-masonry-filter="Office" style="position: absolute; left: 380px; top: 0px;">
-                                        <div class="product">
-                                            <a href="detail.html">
-                                                <img alt="Image" src="img/product images 2.png">
-                                            </a>
-                                            <a class="block" href="detail.html">
-                                                <div>
-                                                    <h5>Rowers Product 20</h5>
-                                                    <span> Product 20 Info</span>
-                                                </div>
-                                                <div>
-                                                    <span class="h4 inline-block">$849</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!--end item-->
+                                    </a>
                                 </div>
-                            <!--end masonry container-->
+                                <div class="col-md-3 col-6">
+                                    <a href="#" class="block" data-filter=".airp">
+                                        <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
+                                            <div class="background-image-holder" style="background: url(&quot;img/cowork-1.jpg&quot;); opacity: 1;">
+                                                <img alt="background" src="img/sample-small.jpg">
+                                            </div>
+                                            <h4 class="pos-vertical-center type--bold">Filter 2</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="#" class="block" data-filter=".solar">
+                                        <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
+                                            <div class="background-image-holder" style="background: url(&quot;img/education-1.jpg&quot;); opacity: 1;">
+                                                <img alt="background" src="img/sample-small.jpg">
+                                            </div>
+                                            <h4 class="pos-vertical-center type--bold">Filter 3</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <a href="#" class="block" data-filter=".solar">
+                                        <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
+                                            <div class="background-image-holder" style="background: url(&quot;img/education-1.jpg&quot;); opacity: 1;">
+                                                <img alt="background" src="img/sample-small.jpg">
+                                            </div>
+                                            <h4 class="pos-vertical-center type--bold">Filter 4 </h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <!--end masonry-->
-                    </div>
-
+                        <div class="masonry__container row masonry--active portfolioContainer" style="position: relative;">
+                            <div class="masonry__item col-md-4" style="position: absolute; left: 0px; top: 0px;"></div>
+                            <div class="masonry__item col-md-4 solar" data-masonry-filter="Audio" style="position: absolute; left: 0px; top: 0px;">
+                                <div class="product">
+                                    <a href="detail.html">
+                                        <img alt="Image" src="img/product_image_1.png">
+                                    </a>
+                                    <a class="block" href="detail.html">
+                                        <div>
+                                            <h5>DALI Xensor 2</h5>
+                                            <span> Desktop Speaker</span>
+                                        </div>
+                                        <div>
+                                            <span class="h4 inline-block">$269</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end item-->
+                            
+                            <div class="masonry__item col-md-4 airp" data-masonry-filter="Computing" style="position: absolute; left: 760px; top: 0px;">
+                                <div class="product">
+                                    <a href="detail.html">
+                                        <img alt="Image" src="img/product_image_2.png">
+                                    </a>
+                                    <a class="block" href="detail.html">
+                                        <div>
+                                            <h5>Microsoft Surface</h5>
+                                            <span> 256GB Core i7</span>
+                                        </div>
+                                        <div>
+                                            <span class="h4 inline-block">$1399</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end item-->
+                            <div class="masonry__item col-md-4 solar" data-masonry-filter="Computing" style="position: absolute; left: 0px; top: 374px;">
+                                <div class="product">
+                                    <a href="detail.html">
+                                        <img alt="Image" src="img/product_image_1.png">
+                                    </a>
+                                    <a class="block" href="detail.html">
+                                        <div>
+                                            <h5>Samsung Ativ</h5>
+                                            <span> 256GB Core i5</span>
+                                        </div>
+                                        <div>
+                                            <span class="h4 inline-block">$1099</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end item-->
+                            <div class="masonry__item col-md-4 airp" data-masonry-filter="Audio" style="position: absolute; left: 760px; top: 374px;">
+                                <div class="product">
+                                    <a href="detail.html">
+                                        <img alt="Image" src="img/product_image_1.png">
+                                    </a>
+                                    <a class="block" href="detail.html">
+                                        <div>
+                                            <h5>Audison TMA-4</h5>
+                                            <span> Bluetooth Headphones</span>
+                                        </div>
+                                        <div>
+                                            <span class="h4 inline-block">$279</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end item-->
+                            <div class="masonry__item col-md-4 solar" data-masonry-filter="Audio" style="position: absolute; left: 380px; top: 0px;">
+                                <div class="product">
+                                    <a href="detail.html">
+                                        <img alt="Image" src="img/product_image_2.png">
+                                    </a>
+                                    <a class="block" href="detail.html">
+                                        <div>
+                                            <h5>Tivoli M1</h5>
+                                            <span> Digital Radio</span>
+                                        </div>
+                                        <div>
+                                            <span class="h4 inline-block type--strikethrough">$479</span>
+                                            <span class="h4 inline-block">$399</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end item-->
+                            
+                  
+                 
                 </div>
-                <!--end of row-->
+              </div>
             </div>
-            <!--end of container-->
         </section>
-        <!-- end list product rowers -->
 
 
             <footer class="footer-3 text-left-xs space--xs bg--dark">
@@ -339,5 +395,9 @@
         <script src="js/scripts.js"></script>
         <script src="js/waqi.api.js"></script>
         <script type="text/javascript" src="js/popup.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script>
+            
+        </script>
     </body>
 </html>
