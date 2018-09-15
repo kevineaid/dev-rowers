@@ -30,7 +30,7 @@ function fetchAqi(){
 }
 function showStation(station) {
 	$.getJSON("https://api.waqi.info/feed/@"+station+"/?token=1b394c2768e78fcad42f4845dc3180f97dc19812",function(result){
-		console.log("haha");
+		
 		cityName.push(result.data.city.name);
 		console.log(result.data.aqi);
 		cityAqi.push(result.data.aqi);

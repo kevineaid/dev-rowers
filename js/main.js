@@ -25,5 +25,16 @@ $(document).ready(function(){
          return false;
     }); 
 
+    $("#textslide > div:gt(0)").hide();
+
+    setInterval(function() { 
+      $('#textslide > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#textslide');
+    },  5000);
+
 
 });
