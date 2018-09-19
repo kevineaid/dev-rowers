@@ -402,7 +402,9 @@ header:after {
 .top-filter .block {
   margin-bottom: 10px;
 }
-
+.top-filter .portfolioFilter .bg--dark {
+  background: #141414;
+}
 
 #textslide { 
     margin: 50px auto; 
@@ -416,9 +418,15 @@ header:after {
     top: 10px; 
     left: 10px; 
     right: 10px; 
-    bottom: 10px; 
+    bottom: 10px;
+    transition: all .4s ease;
+    opacity: 0;
 }
 
+#textslide > div.active { 
+  opacity: 1;
+    transform: scale(1.1) translateY(-10px);
+}
 .icon-bar {
   position: fixed;
   top: 26.75%;
@@ -472,4 +480,70 @@ header:after {
 .youtube {
   background: #bb0000;
   color: white;
+}
+
+
+
+.product-icon {
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.product-icon img {
+  max-width: 70px;
+}
+
+.btn.no-border {
+  border: none;   
+}
+.btn.no-border .btn__text {
+  font-size: 14px;
+}
+
+.cover-size {
+  background-size: cover !important;
+}
+
+.mailicon {
+  position: relative;
+}
+.mailicon .popemail {
+  position: absolute;
+
+  opacity: 0;
+  left: -145px;
+  top: 50%;
+  padding: 14px 14px;
+  color: #f26824;
+  transform: translateY(-50%);
+  font-size: 15px;
+  background: rgba(255,255,255,0.5);
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  transition: all .3s ease;
+}
+.mailicon:hover .popemail{
+  opacity: 1;
+}
+
+
+.nav-xs-stick {
+  position: fixed;
+}
+
+.mhide {
+  
+}
+
+.presence .btn {
+  margin: 0 10px;
+  margin-left: 0 !important;
+}
+
+.about-tabs {
+  border:none;
+}
+.about-tabs li {
+  border: 1px solid #aaa;
+  border-right: 1px solid #aaa !important;
+  margin: 0 10px;
 }

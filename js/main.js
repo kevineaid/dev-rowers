@@ -29,12 +29,19 @@ $(document).ready(function(){
 
     setInterval(function() { 
       $('#textslide > div:first')
-        .fadeOut(1000)
+        .removeClass('active')
         .next()
         .fadeIn(1000)
+        .addClass('active')
         .end()
         .appendTo('#textslide');
     },  5000);
 
 
+    $('.hide-toggle').hide();
+
+    $('.main-cat .block').click(function(){
+        $('.hide-toggle').hide();
+        $('.hide-toggle').fadeIn(300);
+    });
 });

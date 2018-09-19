@@ -25,7 +25,7 @@
 
         <a id="start"></a>
         <div class="nav-container ">
-            <div class="bar bar--md visible-xs">
+            <div class="bar bar--md visible-xs bar--mobile-sticky" data-scroll-class="50px:pos-fixed">
                 <div class="container">
                     <div class="row">
                         <div class="col-3 col-md-2">
@@ -45,10 +45,10 @@
                 <!--end of container-->
             </div>
             <!--end bar-->
-            <nav id="menu1" class="bar bar-1 hidden-xs">
+            <nav id="menu1" class="bar bar-1 hidden-xs bar--mobile-sticky" data-scroll-class="50px:pos-fixed">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-1 col-md-2 hidden-xs">
+                        <div class="col-lg-3 col-md-3 hidden-xs">
                             <div class="bar__module">
                                 <a href="index.html">
                                     <img class="logo logo-dark" alt="logo" src="img/logo.png" />
@@ -57,7 +57,7 @@
                             </div>
                             <!--end module-->
                         </div>
-                        <div class="col-lg-11 col-md-10 text-right text-left-xs text-right-sm text-right-md">
+                        <div class="col-lg-9 col-md-9 text-right text-left-xs text-right-sm text-right-md">
                             <div class="bar__module">
                                 <ul class="menu-horizontal text-right">
                                     <li>
@@ -67,18 +67,24 @@
                                         <a href="product.html">Product</a>
                                     </li>
                                     <li>
-                                        <a href="#">Work</a>
+                                        <a href="blog.html">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="career.html">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">FAQ</a>
                                     </li>
                                     <li>
                                         <a href="about.html">About</a>
                                     </li>
                                     <li>
-                                        <a href="#">FAQ</a>
+                                        <a href="contact.html">Contact Us</a>
                                     </li>
                                     <li>
-                                        <a class="btn btn--sm btn-disabled type--uppercase" href="#">
+                                        <a class="btn btn--sm btn-disabled type--uppercase" href="login.html">
                                             <span class="btn__text">
-                                                Action
+                                                Login
                                             </span>
                                         </a>
                                     </li>
@@ -95,85 +101,92 @@
             <!--end bar-->
         </div>
         <div class="main-container">
-
-
-
-            <!-- <div class="white-space">
-
-            </div> -->
-          <div id="pop-up">
-            <div class="trigger-pop" onclick="togglePop()">
-              <!-- <span class="line1"></span>
-              <span class="line2"></span>
-              <span class="line3"></span> -->
-              <h3>FREE DEMO REQUEST</h3>
+            <div class="icon-bar">
+              <a href="https://wa.me/919891890102" target="_blank" class="facebook"><i class="socicon socicon-viber icon--xs"></i></a> 
+              <a href="#" class="facebook"><i class="socicon socicon-mail icon--xs"></i></a> 
+              <a href="https://www.facebook.com/rowersdpl/" target="_blank" class="facebook"><i class="socicon socicon-facebook icon--xs"></i></a> 
+              <a href="https://twitter.com/rowersdpl" target="_blank" class="twitter"><i class="socicon socicon-twitter icon--xs"></i></a> 
+              <a href="https://www.instagram.com/rowersdpl/" target="_blank" class="google"><i class="socicon socicon-instagram icon--xse"></i></a> 
+              <a href="https://www.youtube.com/channel/UCxTj4hrKPlRhL4UZNg1xCYA" target="_blank" class="youtube"><i class="socicon socicon-youtube icon--xs"></i></a> 
             </div>
-            <div class="popup-form">
-              <h3>FREE DEMO REQUEST</h3>
-              <span> </span>
-              <form class="" action="index.html" method="post">
-                <input type="text" name="name" placeholder="Your name" value="">
-                <input type="text" name="number" placeholder="Mobile Number" value="">
-                <input type="email" name="email" placeholder="Email Address" value="">
-                <input type="text" name="city" placeholder="Your City" value="">
-                <input type="password" name="pin" placeholder="PIN Number" value="">
-                <input id="btn-demo" type="submit" name="" value="Request Demo">
-              </form>
-              <p>By signing up, you agree to the <a href="#"> Terms of Service</a></p>
+            <div id="pop-up">
+                <div class="pop-up-wrap">
+                    <div class="trigger-pop" onclick="togglePop()">
+                      <!-- <span class="line1"></span>
+                      <span class="line2"></span>
+                      <span class="line3"></span> -->
+                      <h3>FREE DEMO REQUEST</h3>
+                    </div>
+                    <div class="popup-form">
+                      <h3>FREE DEMO REQUEST</h3>
+                      <form class="" action="index.html" method="post">
+                        <input type="text" name="name" placeholder="Your name" value="">
+                        <input type="text" name="number" placeholder="Mobile Number" value="">
+                        <input type="email" name="email" placeholder="Email Address" value="">
+                        <input type="text" name="city" placeholder="Your City" value="">
+                        <input type="password" name="pin" placeholder="PIN Number" value="">
+                        <input id="btn-demo" type="submit" name="" value="Request Demo">
+                      </form>
+                      <p>By signing up, you agree to the <a href="#"> Terms of Service</a></p>
+                    </div>
+                </div>
             </div>
-          </div>
 
 
-        <section class="space--sm product-list top-filter">
+        <section class="product-list top-filter">
             <div class="container">
-                <div class="row portfolioFilter">
-                    <div class="col-md-3 col-6">
-                        <a href="#" class="block" data-filter="*">
-                            <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
-                                <div class="background-image-holder" style="background: url(&quot;img/blog-1.jpg&quot;); opacity: 1;">
-                                    <img alt="background" src="img/cowork-9.jpg">
-                                </div>
-                                <h4 class="pos-vertical-center type--bold">Home</h4>
-                            </div>
+                <div class="row portfolioFilter bg--dark pt-3">
+                    <div class="col-md-2 col-6 offset-md-1">
+                        <a class="btn btn--md product-icon" href="#">
+                            <img src="img/icon/product-icon-design-01.png" alt="">
+                        </a>
+                        <br>
+                        <a class="btn no-border" href="#">
+                            <span class="btn__text">Product 1</span>
                         </a>
                     </div>
-                    <div class="col-md-3 col-6">
-                        <a href="#" class="block" data-filter=".airp">
-                            <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
-                                <div class="background-image-holder" style="background: url(&quot;img/cowork-1.jpg&quot;); opacity: 1;">
-                                    <img alt="background" src="img/cowork-10.jpg">
-                                </div>
-                                <h4 class="pos-vertical-center type--bold">Office</h4>
-                            </div>
+                    <div class="col-md-2 col-6">
+                        <a class="btn btn--md product-icon" href="#" class="product-icon">
+                            <img src="img/icon/product-icon-design-02.png" alt="" >
+                        </a>
+                        <br>
+                        <a class="btn no-border" href="#">
+                            <span class="btn__text">Product 2</span>
                         </a>
                     </div>
-                    <div class="col-md-3 col-6">
-                        <a href="#" class="block" data-filter=".solar">
-                            <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
-                                <div class="background-image-holder" style="background: url(&quot;img/education-1.jpg&quot;); opacity: 1;">
-                                    <img alt="background" src="img/cowork-11.jpg">
-                                </div>
-                                <h4 class="pos-vertical-center type--bold">Car</h4>
-                            </div>
+                    <div class="col-md-2 col-6">
+                        <a class="btn btn--md product-icon" href="#" class="product-icon">
+                            <img src="img/icon/product-icon-design-03.png" alt="">
+                        </a>
+                        <br>
+                        <a class="btn no-border" href="#">
+                            <span class="btn__text">Product 3</span>
                         </a>
                     </div>
-                    <div class="col-md-3 col-6">
-                        <a href="#" class="block" data-filter=".solar">
-                            <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
-                                <div class="background-image-holder" style="background: url(&quot;img/education-1.jpg&quot;); opacity: 1;">
-                                    <img alt="background" src="img/cowork-11.jpg">
-                                </div>
-                                <h4 class="pos-vertical-center type--bold">Mask</h4>
-                            </div>
+                    <div class="col-md-2 col-6">
+                        <a class="btn btn--md product-icon" href="#" class="product-icon">
+                            <img src="img/icon/product-icon-design-04.png" alt="">
+                        </a>
+                        <br>
+                        <a class="btn no-border" href="#">
+                            <span class="btn__text">Product 4</span>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <a class="btn btn--md product-icon" href="#" class="product-icon">
+                            <img src="img/icon/product-icon-design-05.png" alt="">
+                        </a>
+                        <br>
+                        <a class="btn no-border" href="#">
+                            <span class="btn__text">Product 5</span>
                         </a>
                     </div>
                 </div>
-                <hr>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-center">Select Category</h2>
+                        <h2 class="text-center mt-1">Select Category</h2>
                         <div class="portfolioFilter clearfix">
-                            <div class="row" style="margin-bottom: 30px;">
+                            <div class="row main-cat" style="margin-bottom: 30px;">
                                 <div class="col-md-4 col-6">
                                     <a href="#" class="block" data-filter="*">
                                         <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
@@ -205,7 +218,36 @@
                                     </a>
                                 </div>
                             </div>
-                            
+                            <div class="row hide-toggle" style="margin-bottom: 30px;">
+                                <div class="col-md-3 col-6">
+                                    <a href="#" class="block text-center" data-filter="*">
+                                        <div class="feature boxed boxed--border border--round p-3">
+                                            <h4 class="color--dark type--bold">Home</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                 <div class="col-md-3 col-6">
+                                    <a href="#" class="block text-center" data-filter=".airp">
+                                        <div class="feature boxed boxed--border border--round p-3">
+                                            <h4 class="color--dark type--bold">Car</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                 <div class="col-md-3 col-6">
+                                    <a href="#" class="block text-center" data-filter=".solar">
+                                        <div class="feature boxed boxed--border border--round p-3">
+                                            <h4 class="color--dark type--bold">Mask</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                 <div class="col-md-3 col-6">
+                                    <a href="#" class="block text-center" data-filter="*">
+                                        <div class="feature boxed boxed--border border--round p-3">
+                                            <h4 class="color--dark type--bold">Office</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <hr>
                         <div class="masonry__container row masonry--active portfolioContainer" style="position: relative;">

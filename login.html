@@ -18,14 +18,14 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
-        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/popup.css?v=3">
     </head>
     <body class=" ">
 
 
         <a id="start"></a>
         <div class="nav-container ">
-            <div class="bar bar--md visible-xs bar--mobile-sticky" data-scroll-class="50px:pos-fixed">
+            <div class="bar bar--md visible-xs" data-scroll-class="100px:pos-fixed">
                 <div class="container">
                     <div class="row">
                         <div class="col-3 col-md-2">
@@ -45,7 +45,7 @@
                 <!--end of container-->
             </div>
             <!--end bar-->
-            <nav id="menu1" class="bar bar-1 hidden-xs" data-scroll-class="100px:pos-fixed">
+            <nav id="menu1" class="bar bar-1 hidden-xs bar--mobile-sticky" data-scroll-class="50px:pos-fixed">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-3 hidden-xs">
@@ -132,90 +132,47 @@
                 </div>
             </div>
 
-
-
-            
-            <section class="imageblock switchable feature-large height-90">
-                <div class="imageblock__content col-lg-3 col-md-4 pos-right">
-                    <div class="background-image-holder cover-size" style="background: url(&quot;img/education-5.jpg&quot;); opacity: 1;">
-                        <img alt="image" src="img/cowork-11.jpg">
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row ">
-                        <div class="col-lg-9 col-md-7">
-                            <div class="tabs-container" data-content-align="left">
-                                <ul class="tabs d-flex justify-content-end about-tabs">
-                                    <li class="active">
-                                        <div class="tab__title">
-                                            <span class="h5">About</span>
+            <section class="switchable ">
+                                <div class="container">
+                                    <div class="row justify-content-between">
+                                        <div class="col-md-6 col-lg-5">
+                                            <div class="">
+                                                <h1>Login to Your account.</h1>
+                                                <p class="lead">
+                                                    Some rowers quote or information
+                                                </p>
+                                                <hr class="short">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input type="email" name="Email Address" placeholder="Email Address">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="password" name="Password" placeholder="Password">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit" class="btn btn--primary">Log in</button>
+                                                        </div>
+                                                    </div>
+                                                    <!--end row-->
+                                                </form>
+                                            </div>
                                         </div>
-                                        
-                                    </li>
-                                    <li class="">
-                                        <div class="tab__title">
-                                            <span class="h5">Our Vision</span>
+                                        <div class="col-md-6 col-lg-5">
+                                            <img alt="Image" class="border--round box-shadow-wide" src="img/knowledge-1.jpg">
                                         </div>
-                                        
-                                    </li>
-                                    <li class="">
-                                        <div class="tab__title">
-                                            <span class="h5">Our Mission</span>
-                                        </div>
-                                        
-                                    </li>
-                                </ul>
-                                <ul class="tabs-content">
-                                    <li class="active">
-                                        <div class="tab__content">
-                                            <h2>About Us</h2>
-                                            <p class="text-justify">
-                                                We, here at Rowers, set one’s sights on bringing to the people an eminently salubrious environment and the gift of Clean Air. 
-                                                Promoting consciousness about environmental preservation, including the quality of air that we breathe, is our sole objective.
-                                                Our comprehensive and wide ranging filter products make us a name to reckon with in this sphere in India. 
-                                                Our filters are environment friendly and are made by professionals who are up to date with the latest technological advancements. 
-                                                We wish to make our Preventive Health Care products accessed by the middle strata of the society and consequently increase affordability and reliability.
-                                                We ardently stand by customer service and customer satisfaction is our exclusive purpose. 
-                                                Our customers are not only our customers but also our business partners. 
-                                                Their impassioned support and assistance helps us in promoting our economical products among the different levels of the society. 
-                                                This aids us in increasing affordability and the quality of living at each level.
-
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="">
-                                        <div class="tab__content">
-                                            <h3>Our Vission</h3>
-                                            <p>
-                                                To ensure that every household has commensurate access to affordable and authentic air purification products so that they can breathe in a new tomorrow, each day.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="">
-                                        <div class="tab__content">
-                                            <h3>Our Mission</h3>
-                                            <p>
-                                            To safeguard and nurture every individual’s right to Clean Air.
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                           
-                        </div>
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </section>
+                                    </div>
+                                    <!--end of row-->
+                                </div>
+                                <!--end of container-->
+                            </section>
 
 
             <footer class="footer-3 text-left-xs space--xs bg--dark">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <img alt="Image" class="logo" src="img/logo.png">
+                            <img alt="Image" class="logo" src="img/logo.png" style="width: 160px;max-height: initial;">
                             <!-- <ul class="list-inline list--hover">
                                 <li class="list-inline-item">
                                     <a href="#">
@@ -257,7 +214,7 @@
                     <!--end of row-->
                     <div class="row">
                         <div class="col-md-6">
-                            <p class="type--fine-print type--fade">
+                            <p class="type--fine-print type--fade" style="font-size: 15px;">
                                 prosperity begins here
                             </p>
                         </div>
@@ -278,7 +235,7 @@
             <i class="stack-interface stack-up-open-big"></i>
         </a>
         <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/flickity.min.js"></script><!--
+        <script src="js/flickity.min.js"></script>
         <script src="js/easypiechart.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/typed.min.js"></script>
@@ -290,10 +247,11 @@
         <script src="js/jquery.steps.min.js"></script>
         <script src="js/countdown.min.js"></script>
         <script src="js/twitterfetcher.min.js"></script>
-        <script src="js/spectragram.min.js"></script> -->
+        <script src="js/spectragram.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/waqi.api.js"></script>
         <script type="text/javascript" src="js/popup.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
